@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.4.63.48766",
-      "templateHash": "15468748291406778902"
+      "templateHash": "2302598641705536306"
     }
   },
   "functions": [],
@@ -13,7 +13,7 @@
   "outputs": {
     "dataLakeConnectionString": {
       "type": "string",
-      "value": "[deployment().properties.templateLink.uri]"
+      "value": "[uri(deployment().properties.templateLink.uri, 'nested/vnet.json')]"
     }
   }
 }
